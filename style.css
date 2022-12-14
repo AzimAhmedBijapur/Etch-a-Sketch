@@ -1,0 +1,35 @@
+*{
+    border: solid 0.5px red;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 10px;
+}
+.sketch{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px;
+    flex-basis: 50%;
+    
+}
+.controls{
+    height: 500px;
+    flex-basis: 15%;
+}
+
+.canva{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    flex-basis: 700px;
+}
+.canva div{
+    display: flex;
+    flex: 1;
+}
+.changeIt{
+    background-color: black;
+}
