@@ -1,9 +1,9 @@
 
 let canvas=document.querySelector('.canva');
 
-let totalRow=100;
+let totalRow=30;
 
-let totalCol=100;
+let totalCol=30;
 
 for(let i=0;i<totalRow;i++){
 
