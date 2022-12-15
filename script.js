@@ -1,9 +1,33 @@
 
+//Initial prompt
+do{
+    var res=prompt('Enter the resolution of canvas : ');
+}while(isNaN(res))
+
+var slider=document.querySelector('#pixOfCanvas');
+
+var outputSlider=document.querySelector('#output');
+
+slider.value=res;
+
+outputSlider.innerHTML=slider.value+" x "+slider.value;
+
+slider.oninput=function(){
+    outputSlider.innerHTML=slider.value+" x "+slider.value;
+    }
+
+//Clear
+
+
+
+//Draw
 let canvas=document.querySelector('.canva');
 
-let totalRow=30;
+let totalRow=res
 
-let totalCol=30;
+console.log(totalRow);
+
+let totalCol=res;
 
 for(let i=0;i<totalRow;i++){
 

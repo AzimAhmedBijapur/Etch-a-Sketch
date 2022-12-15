@@ -28,6 +28,9 @@ body{
     
 }
 .controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 500px;
     flex-basis: 15%;
     padding: 10px 10px;
@@ -59,4 +62,12 @@ body{
     height: 60px;
     padding: 10px;
     border-radius: 10px;
+}
+#colorPicker{
+    width: 200px;
+    height: 55px;
+}
+#pixOfCanvas{
+    width: 200px;
+    height: 55px;
 }
