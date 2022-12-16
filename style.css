@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100&family=Rubik+Vinyl&family=Solway&display=swap');
 
-/* *{
-    border: solid 0.5px red;
-} */
+*{
+    border: solid 0.01px red;
+}
 body{
     background-color: #e4edec;
 }
@@ -50,6 +50,9 @@ body{
     display: flex;
     flex: 1;
 }
+.canva div div{
+    display: flex;
+}
 .changeIt{
     background-color: black;
 }
@@ -70,4 +73,7 @@ body{
 #pixOfCanvas{
     width: 200px;
     height: 55px;
+}
+.eraseIt{
+    background-color: white;
 }
