@@ -40,4 +40,15 @@ function initialize(){
 
 }
 
+function clearIt(){
+
+    const pixels=document.querySelectorAll('.changeIt');
+
+    for(let i=0;i<pixels.length;i++){
+
+        pixels[i].setAttribute('style','background-color:white;');
+    }
+    
+}
+
 initialize();
