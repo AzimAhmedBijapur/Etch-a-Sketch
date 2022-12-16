@@ -62,8 +62,15 @@ function colorIt(){
         pixels[i].addEventListener('mouseover',()=>{
 
             var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+            var reg=/^#([0-9a-f]{3}){1,2}$/i;
 
-            pixels[i].setAttribute('style',`background-color:${randomColor};`);
+            if(reg.test(randomColor)){
+
+                pixels[i].setAttribute('style',`background-color:${randomColor};`);
+            }
+            else{
+                
+            }
 
         });      
 
