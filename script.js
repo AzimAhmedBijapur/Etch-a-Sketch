@@ -29,6 +29,11 @@ function initialize(){
             
             var columnforEachRow=document.createElement('div');
             horizontalRow.appendChild(columnforEachRow);
+
+            columnforEachRow.addEventListener('mouseover',(columnforEachRow)=>{
+
+                columnforEachRow.target.classList.add('changeIt');
+            })
             
         }
     }
