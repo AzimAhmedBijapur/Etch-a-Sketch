@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100&family=Rubik+Vinyl&family=Solway&display=swap');
 
-*{
+/* *{
     border: solid 0.01px red;
-}
+} */
 body{
     background-color: #e4edec;
 }
@@ -55,6 +55,7 @@ body{
 }
 
 .changeIt{
+
     background-color: black;
 }
 .controls button{

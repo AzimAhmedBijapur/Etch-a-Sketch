@@ -51,4 +51,56 @@ function clearIt(){
     
 }
 
+function colorIt(){
+
+    const pixels=document.querySelectorAll('.canva div div');
+
+    console.log(pixels);
+
+    for(let i=0;i<pixels.length;i++){
+
+        pixels[i].addEventListener('mouseover',()=>{
+
+            var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+
+            pixels[i].setAttribute('style',`background-color:${randomColor};`);
+
+        });      
+
+    }
+}
+
+function blackIt(){
+
+    const pixels=document.querySelectorAll('.canva div div');
+
+    console.log(pixels);
+
+    for(let i=0;i<pixels.length;i++){
+
+        pixels[i].addEventListener('mouseover',()=>{
+
+            pixels[i].setAttribute('style','background-color:black;');
+
+        });      
+
+    }
+}
+
+function eraseIt(){
+
+    const pixels=document.querySelectorAll('.canva div div');
+
+    console.log(pixels);
+
+    for(let i=0;i<pixels.length;i++){
+
+        pixels[i].addEventListener('mouseover',()=>{
+
+            pixels[i].setAttribute('style','background-color:white;');
+
+        });      
+
+    }
+}
 initialize();
