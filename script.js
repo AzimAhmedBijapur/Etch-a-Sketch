@@ -23,7 +23,7 @@ function initialize(){
     for(let i=0;i<totalRow;i++){
 
         var horizontalRow=document.createElement('div');
-        
+
         canvas.appendChild(horizontalRow);
 
         for(let j=0;j<totalCol;j++){
@@ -115,3 +115,21 @@ function eraseIt(){
 }
 
 initialize();
+
+const button= document.querySelectorAll('.controls button');
+
+for(let i=0;i<button.length;i++){
+    
+    button[i].addEventListener('mouseover',()=>{
+
+        const audio= document.querySelector('.hoverButton');
+        audio.currentTime=0;
+        audio.play();
+    })
+    button[i].addEventListener('click',()=>{
+
+        const audio= document.querySelector('.clickButton');
+        audio.currentTime=0;
+        audio.play();
+    })
+}

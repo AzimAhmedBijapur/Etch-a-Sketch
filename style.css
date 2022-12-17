@@ -74,8 +74,13 @@ body{
     height: 60px;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px lightgray;
 }
+.controls button:hover{
 
+    transform: scale(1.1);
+    
+}
 #colorPicker{
     width: 200px;
     height: 55px;
