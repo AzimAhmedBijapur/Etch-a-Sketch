@@ -6,7 +6,7 @@ function initialize(){
 
     do{
         res=prompt('Enter the resolution of canvas : ');
-    }while(isNaN(res) || res=='')
+    }while(isNaN(res) || res=='');
 
     //Create the canvas
 
@@ -23,11 +23,13 @@ function initialize(){
     for(let i=0;i<totalRow;i++){
 
         var horizontalRow=document.createElement('div');
+        
         canvas.appendChild(horizontalRow);
 
         for(let j=0;j<totalCol;j++){
             
             var columnforEachRow=document.createElement('div');
+
             horizontalRow.appendChild(columnforEachRow);
 
             columnforEachRow.addEventListener('mouseover',(columnforEachRow)=>{
@@ -62,6 +64,7 @@ function colorIt(){
         pixels[i].addEventListener('mouseover',()=>{
 
             var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+
             var reg=/^#([0-9a-f]{3}){1,2}$/i;
 
             if(reg.test(randomColor)){
@@ -110,4 +113,5 @@ function eraseIt(){
 
     }
 }
+
 initialize();

@@ -3,9 +3,11 @@
 /* *{
     border: solid 0.01px red;
 } */
+
 body{
     background-color: #e4edec;
 }
+
 .title{
     display: flex;
     justify-content: center;
@@ -13,12 +15,14 @@ body{
     color: green;
     font-family: 'Rubik Vinyl', cursive;
 }
+
 .container{
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 40px 10px;
 }
+
 .sketch{
     display: flex;
     justify-content: flex-start;
@@ -27,6 +31,7 @@ body{
     flex-basis: 50%;
     
 }
+
 .controls{
     display: flex;
     flex-direction: column;
@@ -42,14 +47,15 @@ body{
     height: 700px;
     flex-basis: 700px;
     background-color: white;
-    /* border: solid 1px lightgray; */
     box-shadow: 5px 5px 3px 3px lightgray;
     border-radius: 10px;
 }
+
 .canva div{
     display: flex;
     flex: 1;
 }
+
 .canva div div{
     display: flex;
 }
@@ -58,6 +64,7 @@ body{
 
     background-color: black;
 }
+
 .controls button{
     background-color: #0ff20f;
     color: white;
@@ -68,14 +75,17 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
+
 #colorPicker{
     width: 200px;
     height: 55px;
 }
+
 #pixOfCanvas{
     width: 200px;
     height: 55px;
 }
+
 .eraseIt{
     background-color: white;
 }
