@@ -16,8 +16,6 @@ function initialize(){
 
     let totalRow=res;
 
-    console.log(totalRow);
-
     let totalCol=res;
 
     for(let i=0;i<totalRow;i++){
@@ -57,8 +55,6 @@ function colorIt(){
 
     const pixels=document.querySelectorAll('.canva div div');
 
-    console.log(pixels);
-
     for(let i=0;i<pixels.length;i++){
 
         pixels[i].addEventListener('mouseover',()=>{
@@ -84,8 +80,6 @@ function blackIt(){
 
     const pixels=document.querySelectorAll('.canva div div');
 
-    console.log(pixels);
-
     for(let i=0;i<pixels.length;i++){
 
         pixels[i].addEventListener('mouseover',()=>{
@@ -100,8 +94,6 @@ function blackIt(){
 function eraseIt(){
 
     const pixels=document.querySelectorAll('.canva div div');
-
-    console.log(pixels);
 
     for(let i=0;i<pixels.length;i++){
 
