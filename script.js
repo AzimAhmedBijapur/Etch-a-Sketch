@@ -6,7 +6,7 @@ function initialize(){
 
     do{
         res=prompt('Enter the resolution of canvas : ');
-    }while(isNaN(res) || res=='');
+    }while(isNaN(res) || res=='' || res >100 || res==0);
 
     //Create the canvas
 
@@ -110,18 +110,20 @@ initialize();
 
 const button= document.querySelectorAll('.controls button');
 
-for(let i=0;i<button.length;i++){
+
+    for(let i=0;i<button.length;i++){
     
-    button[i].addEventListener('mouseover',()=>{
-
-        const audio= document.querySelector('.hoverButton');
-        audio.currentTime=0;
-        audio.play();
-    })
-    button[i].addEventListener('click',()=>{
-
-        const audio= document.querySelector('.clickButton');
-        audio.currentTime=0;
-        audio.play();
-    })
-}
+        button[i].addEventListener('mouseover',()=>{
+    
+            const audio= document.querySelector('.hoverButton');
+            audio.currentTime=0;
+            audio.play();
+            
+        })
+        button[i].addEventListener('click',()=>{
+    
+            const audio= document.querySelector('.clickButton');
+            audio.currentTime=0;
+            audio.play();
+        })
+    }

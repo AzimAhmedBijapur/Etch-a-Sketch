@@ -6,6 +6,7 @@
 
 body{
     background-color: #e4edec;
+    margin-bottom: -15px;
 }
 
 .title{
@@ -93,4 +94,9 @@ body{
 
 .eraseIt{
     background-color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
