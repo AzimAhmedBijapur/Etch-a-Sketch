@@ -2,4 +2,5 @@
 
 Browser version of sketchpad
 
-![image](https://user-images.githubusercontent.com/104296616/224567519-6762fd15-54e0-48a8-978c-8ddd55768238.png)
+![image](https://user-images.githubusercontent.com/104296616/224567599-1f3b1456-5340-494a-a246-3997a81a34ba.png)
+
